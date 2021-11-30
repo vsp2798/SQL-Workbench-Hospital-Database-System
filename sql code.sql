@@ -26,11 +26,6 @@ FROM
     Resident r ON gn.rid = r.RID
 LIMIT 5;
 
-SELECT r.Rname AS Resident_Name, rm.Type_of_room  
-AS Room_Type From generates AS gn  
-JOIN rooms AS rm On gn.roomid=rm.RoomID  
-JOIN Resident AS r ON gn.rid=r.RID  
-Limit 5 ; 
 
 ------------------------------------------------------------------------------------------------------------------
 
